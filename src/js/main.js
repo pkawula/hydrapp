@@ -39,14 +39,8 @@ const addGlass = () => {
     let glassNumber = parseInt(glassCount.innerHTML) + 1;
 
     if (get(today) !== null) {
-        if (glassNumber > 10) {
-            glassNumber = 10;
-            set(today, glassNumber);
-
-        } else {
-            glassCount.innerHTML = glassNumber;
-            set(today, glassNumber);
-        }
+        glassCount.innerHTML = glassNumber;
+        set(today, glassNumber);
     }
 
 }
